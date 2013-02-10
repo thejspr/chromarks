@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'slop'
+
+options = Slop.parse(help: true) do
+  banner 'Usage: chromarks [options]'
+
+  on :d, :debug, 'Run with debugging enabled'
+end
+
+require 'chromarks'
+Chromarks.run(options)
