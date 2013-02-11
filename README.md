@@ -1,48 +1,34 @@
-# Bkmrk
+# Chromarks
 
-Bookmarks file location:
+Currently only support for bookmarks at this location:
 
 * Chrome (OSX)
 
     ~/Library/Application\ Support/Google/Chrome/Default/Bookmarks
 
-* Chrome Canary (OSX)
-
-    ~/Library/Application\ Support/Google\ Canary/Chrome/Default/Bookmarks
-
-
 ## Installation
 
-Add this line to your application's Gemfile:
+Install via Rubygems.org:
 
-    gem 'bkmrk'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install bkmrk
+    $ gem install chromarks
 
 ## Usage
 
 Running Bkmrk without any parameters output all bookmarks:
 
-    $ bkmrk
+    $ chromarks
+
+To open a given bookmark run:
+
+    $ chromarks  <ID>
 
 To search bookmarks, provide a search term like so:
 
-    $ bkmrk <search term(s)>
+    $ chromarks '<search term(s)>'
 
-To open the first matching results use the `-o` option:
+### Useful alias
 
-    $ bkmrk -o <search term(s)>
-
-### Useful aliases
-
-    alias bm='bkmrk'
-    alias bmo='bkmrk -o'
+    alias cm='chromarks'
 
 ## Contributing
 

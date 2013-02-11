@@ -5,7 +5,7 @@ module Chromarks
   BOOKMARKS_FILE = '~/Library/Application Support/Google/Chrome/Default/Bookmarks'
 
   def self.list
-    print_bookmarks(CLI.new.list)
+    print_bookmarks(CLI.new.bookmarks)
   end
 
   def self.open(id)

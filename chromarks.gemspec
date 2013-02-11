@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = Chromarks::VERSION
   gem.authors       = ['Jesper Kjeldgaard']
   gem.email         = ['thejspr@gmail.com']
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = 'http://thejspr.com'
+  gem.description   = %q{Search, list and open Chrome bookmarks in your terminal.}
+  gem.summary       = %q{Search, list and open Chrome bookmarks in your terminal.}
+  gem.homepage      = 'https://github.com/thejspr/chromarks'
   gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
