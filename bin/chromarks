@@ -1,12 +1,13 @@
 #!/usr/bin/env ruby
 
-require 'slop'
-
-options = Slop.parse(help: true) do
-  banner 'Usage: chromarks [options]'
-
-  on :d, :debug, 'Run with debugging enabled'
-end
-
 require 'chromarks'
-Chromarks.run(options)
+
+if ARGV.empty?
+  Chromarks.list
+else
+  if ARGV.first =~ /^\d+$/
+    Chromarks.open(ARGV.first.to_i)
+  else
+    Chromarks.search(ARGV.join(' ').chomp)
+  end
+end

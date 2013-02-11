@@ -1,0 +1,68 @@
+{
+   "checksum" : "ee4e33746ab38ff2ac77dfd9c562ba5a",
+   "roots" : {
+      "meta_info" : "{\"sync\":{\"transaction_version\":\"419\"}}",
+      "other" : {
+         "date_added" : "12987524147420117",
+         "date_modified" : "12998672354629561",
+         "name" : "Other Bookmarks",
+         "children" : [
+            {
+               "date_added" : "12987524248810977",
+               "date_modified" : "13002118537391007",
+               "name" : "Tools",
+               "children" : [
+                  {
+                     "meta_info" : "{\"sync\":{\"transaction_version\":\"194\"}}",
+                     "date_added" : "13001956877366454",
+                     "name" : "wireframe.cc",
+                     "url" : "http://wireframe.cc/",
+                     "id" : "476",
+                     "type" : "url"
+                  }
+               ],
+               "id" : "22",
+               "type" : "folder"
+            }
+         ],
+         "id" : "2",
+         "type" : "folder"
+      },
+      "bookmark_bar" : {
+         "date_added" : "12987524147420105",
+         "date_modified" : "13003699479604625",
+         "name" : "Bookmarks Bar",
+         "children" : [
+            {
+               "meta_info" : "{\"sync\":{\"transaction_version\":\"197\"}}",
+               "date_added" : "12987524248809558",
+               "date_modified" : "13003699474315565",
+               "name" : "Learn stuff",
+               "children" : [
+                  {
+                     "meta_info" : "{\"sync\":{\"transaction_version\":\"194\"}}",
+                     "date_added" : "12992087065239493",
+                     "name" : "High Scalability - High Scalability - 7 Lessons Learned While Building Reddit to 270 Million Page Views a Month",
+                     "url" : "http://highscalability.com/blog/2010/5/17/7-lessons-learned-while-building-reddit-to-270-million-page.html",
+                     "id" : "451",
+                     "type" : "url"
+                  },
+                  {
+                     "meta_info" : "{\"sync\":{\"transaction_version\":\"194\"}}",
+                     "date_added" : "13001987013560386",
+                     "name" : "Clean Coders",
+                     "url" : "http://www.cleancoders.com/",
+                     "id" : "479",
+                     "type" : "url"
+                  }
+               ],
+               "id" : "4",
+               "type" : "folder"
+            }
+         ],
+         "id" : "1",
+         "type" : "folder"
+      }
+   },
+   "version" : 1
+}

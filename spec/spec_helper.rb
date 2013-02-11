@@ -8,4 +8,7 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
   include CLIHelpers
+  include FixtureHelpers
+
+  config.mock_with :rspec
 end

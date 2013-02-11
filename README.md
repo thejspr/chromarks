@@ -1,6 +1,15 @@
-# Gem Intro
+# Bkmrk
 
-TODO: Write gem introductin and rationale.
+Bookmarks file location:
+
+* Chrome (OSX)
+
+    ~/Library/Application\ Support/Google/Chrome/Default/Bookmarks
+
+* Chrome Canary (OSX)
+
+    ~/Library/Application\ Support/Google\ Canary/Chrome/Default/Bookmarks
+
 
 ## Installation
 
@@ -18,7 +27,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage documentation.
+Running Bkmrk without any parameters output all bookmarks:
+
+    $ bkmrk
+
+To search bookmarks, provide a search term like so:
+
+    $ bkmrk <search term(s)>
+
+To open the first matching results use the `-o` option:
+
+    $ bkmrk -o <search term(s)>
+
+### Useful aliases
+
+    alias bm='bkmrk'
+    alias bmo='bkmrk -o'
 
 ## Contributing
 

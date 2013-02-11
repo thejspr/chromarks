@@ -1,6 +1,8 @@
 module CLIHelpers
-  def run(cmd)
-    system(cmd)
+  def run(&block)
+    capture_stdout do
+      yield
+    end
   end
 
   def run_silent(cmd)
@@ -9,6 +11,14 @@ module CLIHelpers
 
   def run_silent!(cmd)
     silence_stream($stderr) { run_silent(cmd) }
+  end
+
+  def capture_stdout
+    real_stdout, $stdout = $stdout, StringIO.new
+    yield
+    $stdout.string
+  ensure
+    $stdout = real_stdout
   end
 
   private
