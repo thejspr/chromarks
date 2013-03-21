@@ -14,13 +14,13 @@ Install via Rubygems.org:
 
 ## Usage
 
-Running Bkmrk without any parameters output all bookmarks:
+Running Chromarks without any parameters output ALL known bookmarks:
 
     $ chromarks
 
 To open a given bookmark run:
 
-    $ chromarks  <ID>
+    $ chromarks <ID>
 
 To search bookmarks, provide a search term like so:
 
