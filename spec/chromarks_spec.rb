@@ -2,6 +2,6 @@ require 'spec_helper'
 
 describe Chromarks do
   it 'should have a version number' do
-    Chromarks::VERSION.should_not be_nil
+    expect(Chromarks::VERSION).to_not be_nil
   end
 end

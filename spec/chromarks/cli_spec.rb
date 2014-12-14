@@ -9,7 +9,7 @@ describe Chromarks::CLI do
     let(:cli) { Chromarks::CLI.new }
 
     it 'parses bookmarks' do
-      cli.bookmarks.size.should eq(3)
+      expect(cli.bookmarks.size).to eq(3)
     end
   end
 
@@ -18,8 +18,8 @@ describe Chromarks::CLI do
     let(:results) { cli.search }
 
     it 'returns matches for a given keyword' do
-      results.first['name'].should eq('Clean Coders')
-      results.size.should eq(1)
+      expect(results.first['name']).to eq('Clean Coders')
+      expect(results.size).to eq(1)
     end
   end
 
@@ -28,7 +28,7 @@ describe Chromarks::CLI do
     let(:expected_url) { 'http://wireframe.cc/' }
 
     it 'finds and opens a bookmark' do
-      cli.should_receive(:system).with("open '#{expected_url}'")
+      expect(cli).to receive(:system).with("open '#{expected_url}'")
       cli.open
     end
   end
